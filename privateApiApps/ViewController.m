@@ -9,7 +9,7 @@
 #import "ViewController.h"
 #import "AppsObject.h"
 #import "AppInfoViewController.h"
-#include <objc/runtime.h>
+#import <objc/runtime.h>
 
 @interface ViewController ()
 {
@@ -43,9 +43,10 @@
         appsObj.version = [obj performSelector:@selector(shortVersionString)];
         appsObj.bundleId = [obj performSelector:@selector(applicationIdentifier)];
         appsObj.iconData = [obj performSelector:@selector(iconDataForVariant:) withObject:@(2)];
-        
-        NSLog(@"appTags = %@", [obj performSelector:@selector(appTags)]);
-        
+        appsObj.appFullName = [obj performSelector:@selector(itemName)];
+        appsObj.appType = [obj performSelector:@selector(applicationType)];
+        appsObj.appVendorName = [obj performSelector:@selector(vendorName)];
+        appsObj.appRating = [obj performSelector:@selector(ratingLabel)];
         [_appsObjArray addObject:appsObj];
     }];
     [self.tableView reloadData];
