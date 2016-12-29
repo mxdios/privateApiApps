@@ -10,6 +10,8 @@
 #import <UIKit/UIKit.h>
 
 @interface AppsObject : NSObject
+
+@property (nonatomic, strong) id obj;
 /** app名字 */
 @property (nonatomic, copy) NSString *appName;
 /** 版本号 */
@@ -26,6 +28,8 @@
 @property (nonatomic, copy) NSString *appVendorName;
 /** app评级 */
 @property (nonatomic, copy) NSString *appRating;
+/** appid */
+@property (nonatomic, copy) NSNumber *appid;
 
 + (UIImage *)getAppIcon:(NSData *)iconData;
 @end

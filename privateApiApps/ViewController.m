@@ -36,20 +36,15 @@
     
     [appsArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         
-//        NSDictionary *boundIconsDict = [obj performSelector:@selector(boundIconsDictionary)];
-        
         AppsObject *appsObj = [[AppsObject alloc] init];
+        appsObj.obj = obj;
         appsObj.appName = [obj performSelector:@selector(localizedName)];
-        appsObj.version = [obj performSelector:@selector(shortVersionString)];
-        appsObj.bundleId = [obj performSelector:@selector(applicationIdentifier)];
         appsObj.iconData = [obj performSelector:@selector(iconDataForVariant:) withObject:@(2)];
-        appsObj.appFullName = [obj performSelector:@selector(itemName)];
-        appsObj.appType = [obj performSelector:@selector(applicationType)];
-        appsObj.appVendorName = [obj performSelector:@selector(vendorName)];
-        appsObj.appRating = [obj performSelector:@selector(ratingLabel)];
+        
         [_appsObjArray addObject:appsObj];
     }];
     [self.tableView reloadData];
+    
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
@@ -73,7 +68,6 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSLog(@"点击了 = %ld", indexPath.row);
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     AppInfoViewController *appVc = [[AppInfoViewController alloc] init];
     appVc.appsObj = _appsObjArray[indexPath.row];
