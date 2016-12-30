@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C2175BBF1E15066A00E935E9 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2175BBE1E15066A00E935E9 /* CoreTelephony.framework */; };
+		C2175BC91E16060F00E935E9 /* AppsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C2175BC21E16060F00E935E9 /* AppsObject.m */; };
+		C2175BCA1E16060F00E935E9 /* AppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2175BC51E16060F00E935E9 /* AppInfoViewController.m */; };
+		C2175BCB1E16060F00E935E9 /* AppInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C2175BC61E16060F00E935E9 /* AppInfoViewController.xib */; };
+		C2175BCC1E16060F00E935E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2175BC81E16060F00E935E9 /* ViewController.m */; };
+		C2175BD21E1606D300E935E9 /* InfoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2175BD11E1606D300E935E9 /* InfoTableViewController.m */; };
 		C23229931E1254F900E84029 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C23229921E1254F900E84029 /* main.m */; };
 		C23229961E1254F900E84029 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C23229951E1254F900E84029 /* AppDelegate.m */; };
-		C23229991E1254F900E84029 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23229981E1254F900E84029 /* ViewController.m */; };
 		C232299C1E1254F900E84029 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C232299A1E1254F900E84029 /* Main.storyboard */; };
 		C232299E1E1254F900E84029 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C232299D1E1254F900E84029 /* Assets.xcassets */; };
 		C23229A11E1254F900E84029 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C232299F1E1254F900E84029 /* LaunchScreen.storyboard */; };
 		C23229AC1E1254F900E84029 /* privateApiAppsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C23229AB1E1254F900E84029 /* privateApiAppsTests.m */; };
 		C23229B71E1254F900E84029 /* privateApiAppsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C23229B61E1254F900E84029 /* privateApiAppsUITests.m */; };
-		C23229C61E12567100E84029 /* AppsObject.m in Sources */ = {isa = PBXBuildFile; fileRef = C23229C51E12567100E84029 /* AppsObject.m */; };
-		C23229D41E12695200E84029 /* AppInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23229D21E12695200E84029 /* AppInfoViewController.m */; };
-		C23229D51E12695200E84029 /* AppInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C23229D31E12695200E84029 /* AppInfoViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,12 +40,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C2175BBE1E15066A00E935E9 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		C2175BC11E16060F00E935E9 /* AppsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsObject.h; sourceTree = "<group>"; };
+		C2175BC21E16060F00E935E9 /* AppsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsObject.m; sourceTree = "<group>"; };
+		C2175BC41E16060F00E935E9 /* AppInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfoViewController.h; sourceTree = "<group>"; };
+		C2175BC51E16060F00E935E9 /* AppInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfoViewController.m; sourceTree = "<group>"; };
+		C2175BC61E16060F00E935E9 /* AppInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppInfoViewController.xib; sourceTree = "<group>"; };
+		C2175BC71E16060F00E935E9 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C2175BC81E16060F00E935E9 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C2175BD01E1606D300E935E9 /* InfoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoTableViewController.h; sourceTree = "<group>"; };
+		C2175BD11E1606D300E935E9 /* InfoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoTableViewController.m; sourceTree = "<group>"; };
 		C232298E1E1254F900E84029 /* privateApiApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = privateApiApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23229921E1254F900E84029 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C23229941E1254F900E84029 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C23229951E1254F900E84029 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		C23229971E1254F900E84029 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C23229981E1254F900E84029 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		C232299B1E1254F900E84029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C232299D1E1254F900E84029 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C23229A01E1254F900E84029 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,11 +64,6 @@
 		C23229B21E1254F900E84029 /* privateApiAppsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = privateApiAppsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C23229B61E1254F900E84029 /* privateApiAppsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = privateApiAppsUITests.m; sourceTree = "<group>"; };
 		C23229B81E1254F900E84029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C23229C41E12567100E84029 /* AppsObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppsObject.h; sourceTree = "<group>"; };
-		C23229C51E12567100E84029 /* AppsObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppsObject.m; sourceTree = "<group>"; };
-		C23229D11E12695200E84029 /* AppInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfoViewController.h; sourceTree = "<group>"; };
-		C23229D21E12695200E84029 /* AppInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfoViewController.m; sourceTree = "<group>"; };
-		C23229D31E12695200E84029 /* AppInfoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AppInfoViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2175BBF1E15066A00E935E9 /* CoreTelephony.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,6 +92,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C2175BB81E14FAC300E935E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2175BBE1E15066A00E935E9 /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C2175BC01E16060F00E935E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C2175BC11E16060F00E935E9 /* AppsObject.h */,
+				C2175BC21E16060F00E935E9 /* AppsObject.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C2175BC31E16060F00E935E9 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				C2175BC41E16060F00E935E9 /* AppInfoViewController.h */,
+				C2175BC51E16060F00E935E9 /* AppInfoViewController.m */,
+				C2175BC61E16060F00E935E9 /* AppInfoViewController.xib */,
+				C2175BC71E16060F00E935E9 /* ViewController.h */,
+				C2175BC81E16060F00E935E9 /* ViewController.m */,
+				C2175BD01E1606D300E935E9 /* InfoTableViewController.h */,
+				C2175BD11E1606D300E935E9 /* InfoTableViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		C23229851E1254F900E84029 = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +130,7 @@
 				C23229AA1E1254F900E84029 /* privateApiAppsTests */,
 				C23229B51E1254F900E84029 /* privateApiAppsUITests */,
 				C232298F1E1254F900E84029 /* Products */,
+				C2175BB81E14FAC300E935E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,15 +147,10 @@
 		C23229901E1254F900E84029 /* privateApiApps */ = {
 			isa = PBXGroup;
 			children = (
+				C2175BC01E16060F00E935E9 /* Model */,
+				C2175BC31E16060F00E935E9 /* ViewController */,
 				C23229941E1254F900E84029 /* AppDelegate.h */,
 				C23229951E1254F900E84029 /* AppDelegate.m */,
-				C23229971E1254F900E84029 /* ViewController.h */,
-				C23229981E1254F900E84029 /* ViewController.m */,
-				C23229D11E12695200E84029 /* AppInfoViewController.h */,
-				C23229D21E12695200E84029 /* AppInfoViewController.m */,
-				C23229D31E12695200E84029 /* AppInfoViewController.xib */,
-				C23229C41E12567100E84029 /* AppsObject.h */,
-				C23229C51E12567100E84029 /* AppsObject.m */,
 				C232299A1E1254F900E84029 /* Main.storyboard */,
 				C232299D1E1254F900E84029 /* Assets.xcassets */,
 				C232299F1E1254F900E84029 /* LaunchScreen.storyboard */,
@@ -264,7 +297,7 @@
 			files = (
 				C23229A11E1254F900E84029 /* LaunchScreen.storyboard in Resources */,
 				C232299E1E1254F900E84029 /* Assets.xcassets in Resources */,
-				C23229D51E12695200E84029 /* AppInfoViewController.xib in Resources */,
+				C2175BCB1E16060F00E935E9 /* AppInfoViewController.xib in Resources */,
 				C232299C1E1254F900E84029 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,11 +323,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C23229991E1254F900E84029 /* ViewController.m in Sources */,
+				C2175BC91E16060F00E935E9 /* AppsObject.m in Sources */,
 				C23229961E1254F900E84029 /* AppDelegate.m in Sources */,
-				C23229C61E12567100E84029 /* AppsObject.m in Sources */,
-				C23229D41E12695200E84029 /* AppInfoViewController.m in Sources */,
+				C2175BCA1E16060F00E935E9 /* AppInfoViewController.m in Sources */,
 				C23229931E1254F900E84029 /* main.m in Sources */,
+				C2175BCC1E16060F00E935E9 /* ViewController.m in Sources */,
+				C2175BD21E1606D300E935E9 /* InfoTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -532,6 +566,7 @@
 				C23229BD1E1254F900E84029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C23229BE1E1254F900E84029 /* Build configuration list for PBXNativeTarget "privateApiAppsTests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +575,7 @@
 				C23229C01E1254F900E84029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C23229C11E1254F900E84029 /* Build configuration list for PBXNativeTarget "privateApiAppsUITests" */ = {
 			isa = XCConfigurationList;
@@ -548,6 +584,7 @@
 				C23229C31E1254F900E84029 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -29,9 +29,8 @@
     
     [self.view addSubview:self.tableView];
     
-    
-    Class LSApplicationWorkspace_class = objc_getClass("LSApplicationWorkspace");
-    NSObject *workspace = [LSApplicationWorkspace_class performSelector:@selector(defaultWorkspace)];
+    Class LSApp_class = objc_getClass("LSApplicationWorkspace");
+    NSObject *workspace = [LSApp_class performSelector:@selector(defaultWorkspace)];
     NSArray *appsArray = [workspace performSelector:@selector(allApplications)];
     
     [appsArray enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
